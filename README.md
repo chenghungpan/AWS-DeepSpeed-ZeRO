@@ -15,6 +15,11 @@ ZeRO optimizes memory usage in a data-parallel setting by partitioning the state
 
 
 <img src="img/ZERO-3.png" alt="Alt text for the image" width="1000"/>
+
+Model parallelism, on the other hand, involves splitting the model's layers across different devices, so each device is responsible for computing a part of the forward and backward passes of the neural network. This is different from data parallelism and is typically used when a model's layers are too large to fit into a single GPU's memory. <br>
+
+ZeRO's techniques reduce the redundancies in data parallelism by cleverly distributing model states across the GPUs, while also incorporating aspects of model parallelism by allowing for the training of models where individual layers may be too large for a single device. Thus, while ZeRO primarily optimizes data parallel training, its state partitioning allows for training models of a size that would traditionally require model parallelism, effectively giving practitioners the best of both worlds in certain scenarios.
+
 <img src="img/ZERO-4.png" alt="Alt text for the image" width="1000"/>
 <img src="img/ZERO-5.png" alt="Alt text for the image" width="1000"/>
 <img src="img/ZERO-6.png" alt="Alt text for the image" width="1000"/>
