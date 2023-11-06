@@ -15,8 +15,8 @@ ZeRO optimizes memory usage in a data-parallel setting by partitioning the state
 
 he different stages of ZeRO (ZeRO-1, ZeRO-2, and ZeRO-3) progressively partition more of the model's state:
 
-<b>ZeRO-1 </b>partitions optimizer state across data parallel workers.
-<b>ZeRO-2 </b> extends this by also partitioning gradients.
+<b>ZeRO-1 </b>partitions optimizer state across data parallel workers. <br>
+<b>ZeRO-2 </b> extends this by also partitioning gradients. <br>
 <b> ZeRO-3 </b> goes further by also partitioning the parameters, effectively meaning no single device contains the entire model, optimizer states, or gradients.
 
 
