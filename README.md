@@ -2,7 +2,7 @@
 
 This repository demonstrates how you can accelerate GPT-J with DeepSpeed Inference and deploy it on AWS SageMaker.
 
-## LLM Model Size Grows Exponentially  
+## LLM Size Grows Exponentially  
 
 <img src="img/ZERO-1.png" alt="Alt text for the image" width="1000"/>
 
