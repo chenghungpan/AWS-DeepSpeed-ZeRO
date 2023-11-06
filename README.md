@@ -6,7 +6,6 @@ This repository demonstrates how you can accelerate GPT-J with DeepSpeed Inferen
 
 <img src="img/ZERO-1.png" alt="Alt text for the image" width="1000"/>
 
-## DeepSpeefd ZeRO (Zero Redundancy Optimization)
 
 <img src="img/ZERO-2.png" alt="Alt text for the image" width="1000"/>
 <img src="img/ZERO-3.png" alt="Alt text for the image" width="1000"/>
