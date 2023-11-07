@@ -6,6 +6,30 @@ This repository demonstrates how you can accelerate GPT-J with DeepSpeed Inferen
 
 <img src="img/ZERO-1.png" alt="Alt text for the image" width="1000"/>
 
+As we enter the era of LLMs with billions, or even trillions of parameters, traditional training methodologies falter. These expansive neural networks demand extraordinary computational resources—far beyond the capabilities of any single machine. This is where distributed training paradigms, and specifically, tools like DeepSpeed come into play.
+
+## Why DeepSpeed?
+
+DeepSpeed is a deep learning optimization library that provides a suite of tools designed to facilitate the training of very large models. It extends PyTorch with capabilities that efficiently leverage hardware at scale, optimizing both memory usage and speed to break through previous limitations.
+
+Here's why the advent of DeepSpeed is pivotal for LLMs:
+
+### 1. Scalability: 
+LLMs require a vast canvas upon which their myriad parameters can interact. DeepSpeed orchestrates training across multiple GPUs and nodes, breaking the barriers of single-device memory limits and allowing these colossal models to scale gracefully.
+
+### 2. Speed: 
+Time is of the essence in machine learning. DeepSpeed employs strategies like tensor slicing to maximize parallelism and throughput, significantly reducing the clock time needed for model training iterations.
+
+### 3. Memory Optimization: 
+Through innovative techniques like ZeRO (Zero Redundancy Optimizer) and offloading, DeepSpeed minimizes memory footprint, enabling training of models that were previously infeasible due to hardware constraints.
+
+### 4. Cost-Effectiveness: 
+By improving resource utilization and reducing computational overhead, DeepSpeed makes the training of LLMs more economically viable, democratizing access to state-of-the-art models.
+
+### 5. Flexibility and Accessibility: 
+DeepSpeed's compatibility with PyTorch means that it can be integrated into existing workflows with minimal friction, lowering the barrier to entry for practitioners and researchers alike.
+
+
 
 <img src="img/ZERO-2.png" alt="Alt text for the image" width="1000"/>
 
